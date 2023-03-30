@@ -244,7 +244,7 @@ void PrintLine(CatInfo info, char *ptr, const char *end, bool *empty_line,
         a > -1 && a < 9 ? printf("%c", (char)(alt + a)) : 0;
         a > 10 && a < 32 ? printf("^") : 0;
         a > 10 && a < 32 ? printf("%c", (char)(alt + a)) : 0;
-        a == 127 ? printf("хуй") : 0;
+        a == 127 ? printf("^?") : 0;
         a >= 32 && a != 127 ? printf("%c", *p) : 0;
         a == 10 ? printf("%c", *p) : 0;
         a == 9 ? printf("^I") : 0;
